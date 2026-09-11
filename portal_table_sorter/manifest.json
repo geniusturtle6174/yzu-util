@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "元智課務系統作業排序",
+  "version": "1.0",
+  "description": "自動將作業繳交記錄表依「未給分 → 上傳時間 → 學號」排序",
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
